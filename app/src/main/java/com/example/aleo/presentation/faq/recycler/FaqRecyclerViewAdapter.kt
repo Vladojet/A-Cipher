@@ -4,8 +4,10 @@ import android.content.Context
 import android.graphics.Color
 import android.text.Spannable
 import android.text.SpannableStringBuilder
+import android.text.method.LinkMovementMethod
 import android.text.style.ForegroundColorSpan
 import android.text.style.ImageSpan
+import android.text.util.Linkify
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.TextView
@@ -59,6 +61,8 @@ class FaqRecyclerViewAdapter(
                 val holderUsual = holder as ViewHolder
                 holderUsual.questionText.text = model.questionText
                 holderUsual.answerText.text = model.answerText
+                Linkify.addLinks(holderUsual.questionText, Linkify.WEB_URLS)
+                Linkify.addLinks(holderUsual.answerText, Linkify.WEB_URLS)
             }
             2 -> {
                 val holderDiscord = holder as ViewHolderDiscord
@@ -81,6 +85,8 @@ class FaqRecyclerViewAdapter(
                 )
                 holderDiscord.questionText.setText(ssb, TextView.BufferType.SPANNABLE)
                 holderDiscord.answerText.text = model.answerText
+                Linkify.addLinks(holderDiscord.questionText, Linkify.WEB_URLS)
+                Linkify.addLinks(holderDiscord.answerText, Linkify.WEB_URLS)
             }
         }
 

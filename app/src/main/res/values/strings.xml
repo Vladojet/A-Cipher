@@ -76,6 +76,111 @@
     <string name="question37">Guys, is there an option like in fish to limit the number
         of threads used?</string>
 
+    <!-- Answers usual. -->
+    <string name="answer1">Aleo is the world’s first full-stack development platform for private
+        applications (powered by zero-knowledge) with speed, integrity and scale.</string>
+    <string name="answer2">Aleo is a protocol that works on the technology of Zero Disclosure -
+        ZK (Zero Knowledge). Also, the protocol is programmable, which makes it possible to create
+        truly secure programs. The idea of the project is to create an opportunity to create secure
+        private applications with zero disclosure (ZK), because such an application will be fast
+        and easily scalable.</string>
+    <string name="answer3">You can explore all the official links from the start-here channel. There
+        is also a curated list of Aleo and Leo code and
+        resources made by CTO Howard Wu: https://github.com/howardwu/awesome-aleo</string>
+    <string name="answer4">Zero Knowledge Technology (Zero Knowledge) is a technology that allows
+        you to confirm any information without disclosing this information.
+        For example: Mai has a basket with 7 apples, John can only let Mai into the castle by making
+        sure there are 7 apples in the basket, but Mai does not want to show him the contents of the
+        basket. ZK makes it possible to confirm Mai`s words without John checking the cart,
+        thus skipping Mai.</string>
+    <string name="answer5">PoSW (Proof of Succinct Work).</string>
+    <string name="answer6">That’s right, Aleo has its own Leo programming language.
+        You can read more here: https://www.aleo.org/post/leo-programming-language</string>
+    <string name="answer7">That’s right, Aleo has created its own development environment,
+        aleo studio: https://www.aleo.studio/</string>
+    <string name="answer8">Aleo has a smart contract that allows you to develop applications.</string>
+    <string name="answer9">Aleo raised $228 million and was valued at $1.45 billion. Investors: A16z,
+        Coinbase Ventures, Polychain, Slow Ventures, zkValidator, Joseph Lubin, Scalar Capital,
+        Variant Fund, Galaxy Digital, Placeholder VC, Dekrypt Capital, a_capital, Ethereum Ventures,
+        Kora, Softbank, Samsung NEXT and others.</string>
+    <string name="answer10">All information https://www.aleo.org/post/aleo-ambassador-program</string>
+    <string name="answer11">Articles, memes, infographics, design, graphics, videos, tweets, posters,
+        animations, stickers, etc.</string>
+    <string name="answer12">In the official Discord of the project in the channel #user-content.</string>
+    <string name="answer13">Materials can be found on the official Aleo
+        website - https://brand.aleo.org/</string>
+    <string name="answer14">There are no exact awards, it was only said that ambassadors will
+        be able to get a place on the whitelist, as well as "Aleo Credits".</string>
+    <string name="answer15">https://github.com/howardwu/awesome-aleo#wallets here you can
+        check it and download.</string>
+    <string name="answer16">The date will be announced, it will be possible to buy on Pre-sale.
+        Beware of scammers.</string>
+    <string name="answer17">Aleo coins will be used to pay transaction fees and are expected to be a
+        reward currency for “provers” who will act as L2 providers on top of the network.</string>
+    <string name="answer18">With the third round of ambassadors, we are now introducing a third
+        group: the voyagers. Think of the voyagers as the “golden apprentices.”
+        They create very high-quality content, plan and host Aleo meetups, and actively participate
+        inthe community. An ambassador can only become a voyager if they are first an apprentice.
+        Similarly, an ambassador can only become a maestro if they are first a voyager.</string>
+    <string name="answer19">You can read more about grant program
+        here: https://www.aleo.org/post/community-grants-program.</string>
+    <string name="answer20">Guide: https://github.com/AleoHQ/snarkOS/
+Incentives for Aleo Testnet 3 activated on December 2nd at 00:00 UTC
+Testnet 3 Incentives Kickoff: https://www.aleo.org/post/testnet-3-incentives-kickoff
+Introducing Provers in Aleo Testnet 3: https://www.aleo.org/post/launching-testnet-3-2-provers
+        The official Explorer is in the final stages of development: https://www.aleo.network/
+</string>
+    <string name="answer21">It is the place where you can learn more about Aleo project and expand
+        your expertise in running nodes, leo language, testnet and just become an active member
+        of the community, participating in other activities as well.
+        Official link to the Aleo education - https://aleoeducation.crew3.xyz/.</string>
+
+    <!-- Answers discord. -->
+    <string name="answer22">Hi be active to contribute to the community.</string>
+    <string name="answer23">Rather, installing a node on a rented server test no consists of two
+        types: the first is installing a node on a rented server, taking into account
+        the recommended capacities, the servers cost $ 300 + - the second stage is installing
+        a node for mining a farm from video cards, and one person said that he didn’t even
+        I will rent an expensive server, because according to the hash rate,
+        the video cards will kill those nodes that put the node on the rented server.</string>
+    <string name="answer24">When you set up a node, you already create a
+        wallet (snarkos account new). The most important thing is to save all the keys and
+        the address (well, not necessarily, it will be shown), but be sure to save the keys.</string>
+    <string name="answer25">Canva. Adobe Illustrator.</string>
+    <string name="answer26">Voyager are ambassadors between Apprentice and Maestro. You can only
+        become a Voyager if you have already been Apprentice for at least one round. In each round,
+        Maestro earns 50 points, Apprentice earns 25 points, and Voyager earns 40 points (reminder:
+        Aleo points have no value of their own).</string>
+    <string name="answer27">KYC for the Russian Federation in the block, we already
+        have 2 ambassadors unfortunately lost their roles.</string>
+    <string name="answer28">Yes, that’s right.</string>
+    <string name="answer29">Until January 26, there will be t3 f2, according to the info from the
+        last blog article, even if all the tokens do not have time to get it by this number.</string>
+    <string name="answer30">On the fireside, they almost always give the opportunity to present the
+        project (the only thing left to do is wait for it to happen). At the community call,
+        you are unlikely to be able to present (only if you agree on this with Viv or Nodari).
+        You can also present in English at our English Speaking Club
+        (the date is not yet known).</string>
+    <string name="answer31">From what is displayed in the software, there may be some errors on
+        the official website. In fact, you have 6k.</string>
+    <string name="answer32">Use multiple servers for one wallet? Yes, you can.</string>
+    <string name="answer33">I think that 1060 will be very weak.</string>
+    <string name="answer34">If we are talking about awards,
+        then we initially volunteered and helped the project not in order to receive an award for it.
+        This is everyone’s decision. Of course, it’s nice, but getting experience, most often,
+        is a hundred times more important than getting something material.</string>
+    <string name="answer35">In general, the stronger the iron, the faster.
+        I think that 32 and 40, 40 will be stronger.</string>
+    <string name="answer36">Need to test. The algorithm is new, while there is little
+        statistical data.</string>
+    <string name="answer37">No. Here is a different algorithm, the prover usually does not eat all
+        the flows. Your kernels generate proof, solve mathematical primitives,
+        reaching a certain difficulty target - you can say some level of performance. If 24 cores,
+        let’s say, have a performance of 10 conventional units, and 240 cores 100, then the winner
+        will be the one who reaches this target and the rewards will be distributed proportionally.
+        If your 24 cores do not reach the minimum target value at all, then no rewards
+        will be awarded at all.</string>
+
 
 
 
