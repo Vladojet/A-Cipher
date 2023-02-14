@@ -25,13 +25,13 @@ class FaqFragment : Fragment() {
     private lateinit var courseRV: RecyclerView
     private lateinit var binding: FragmentFaqBinding
 
-    private lateinit var adapter: FaqRecyclerViewAdapter
+    private lateinit var  adapter: FaqRecyclerViewAdapter
     private lateinit var faqEntityList: List<FaqEntity>
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentFaqBinding.inflate(layoutInflater)
         return binding.root
     }
@@ -88,40 +88,33 @@ class FaqFragment : Fragment() {
 
     private fun buildRecyclerView() {
         faqEntityList = ArrayList<FaqEntity>()
-        (faqEntityList as ArrayList<FaqEntity>).add(FaqEntity("DSA", "DSA Self Paced Course",1))
-        (faqEntityList as ArrayList<FaqEntity>).add(FaqEntity("JAVA and so on that is a question that allvays  thry tosadas", "JAVA Self Paced Course",2))
-        (faqEntityList as ArrayList<FaqEntity>).add(FaqEntity("C++", "C++ Self Paced Course",2))
-        (faqEntityList as ArrayList<FaqEntity>).add(FaqEntity("Python", "Python Self Paced Course",2))
-        (faqEntityList as ArrayList<FaqEntity>).add(
-            FaqEntity(
+        (faqEntityList as ArrayList<FaqEntity>).add(FaqEntity(
+            "What is Aleo?",
+            "DSA Self Paced Course",1))
+        (faqEntityList as ArrayList<FaqEntity>).add(FaqEntity(
+            "JAVA and so on that is a question that allvays  thry tosadas",
+            "JAVA Self Paced Course",2))
+        (faqEntityList as ArrayList<FaqEntity>).add(FaqEntity(
+            "C++",
+            "C++ Self Paced Course",2))
+        (faqEntityList as ArrayList<FaqEntity>).add(FaqEntity(
+            "Python",
+            "Python Self Paced Course",2))
+        (faqEntityList as ArrayList<FaqEntity>).add(FaqEntity(
                 "Fork CPP",
-                "Fork CPP Self Paced Course",1
-            )
-        )
-        (faqEntityList as ArrayList<FaqEntity>).add(
-            FaqEntity(
+                "Fork CPP Self Paced Course",1))
+        (faqEntityList as ArrayList<FaqEntity>).add(FaqEntity(
                 "Fork CPP",
-                "Fork CPP Self Paced Course",1
-            )
-        )
-        (faqEntityList as ArrayList<FaqEntity>).add(
-            FaqEntity(
+                "Fork CPP Self Paced Course",1))
+        (faqEntityList as ArrayList<FaqEntity>).add(FaqEntity(
                 "Fork CPP",
-                "Fork CPP Self Paced Course",2
-            )
-        )
-        (faqEntityList as ArrayList<FaqEntity>).add(
-            FaqEntity(
+                "Fork CPP Self Paced Course",2))
+        (faqEntityList as ArrayList<FaqEntity>).add(FaqEntity(
                 "Fork CPP",
-                "Fork CPP Self Paced Course",2
-            )
-        )
-        (faqEntityList as ArrayList<FaqEntity>).add(
-            FaqEntity(
+                "Fork CPP Self Paced Course",2))
+        (faqEntityList as ArrayList<FaqEntity>).add(FaqEntity(
                 "Fork CPP",
-                "Fork CPP Self Paced Course",1
-            )
-        )
+                "Fork CPP Self Paced Course",1))
 
         adapter = FaqRecyclerViewAdapter(requireContext(), faqEntityList)
 
@@ -132,5 +125,6 @@ class FaqFragment : Fragment() {
 
         courseRV.adapter = adapter
     }
+
 }
 

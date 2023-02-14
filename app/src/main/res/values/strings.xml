@@ -10,5 +10,74 @@
     <string name="question">Question</string>
     <string name="answer">Answer</string>
     <string name="logoplaceholder">logoPlaceHolder</string>
-    <string name="from"><font color='#BBBBBD'>"   from   "</font></string>
+    <string name="from">"   from   "</string>
+
+    <!-- Questions usual. -->
+    <string name="question1">What is Aleo?</string>
+    <string name="question2">What is the idea for the project?</string>
+    <string name="question3">Where can I see the entire Aleo ecosystem?</string>
+    <string name="question4">What is ZK?</string>
+    <string name="question5">What consensus mechanism does Aleo use?</string>
+    <string name="question6">If a protocol allows you to create applications,
+        then it should have its own programming language, right?</string>
+    <string name="question7">Should this language have its own development environment?</string>
+    <string name="question8">How is Aleo different from Zcash, Monero?</string>
+    <string name="question9">What about investors?</string>
+    <string name="question10">What is the status of the Aleo ambassador program?</string>
+    <string name="question11">What types of activities can I do?</string>
+    <string name="question12">Where to send my activities?</string>
+    <string name="question13">Where can I get materials (logos, backgrounds, color palette) for my
+        future works?</string>
+    <string name="question14">What about rewards?</string>
+    <string name="question15">How to creat wallet in aleo network?</string>
+    <string name="question16">When and where will it be possible to buy Aleo tokens?</string>
+    <string name="question17">What will Aleo coins be used for?</string>
+    <string name="question18">Who is Aleo Voyager?</string>
+    <string name="question19">What are grants?</string>
+    <string name="question20">Is there any documentations on how to set up a node and join
+        testnet 3?</string>
+    <string name="question21">What is Aleo Education?</string>
+
+    <!-- Questions from discord -->
+    <string name="question22">Hello everyone, what do you need to do to become an
+        ambassador?</string>
+    <string name="question23">Hi all. What is the no 3 test, in installing a node for mining
+        equipment from a video card?</string>
+    <string name="question24">How to create a wallet to receive rewards from a node?</string>
+    <string name="question25">Hi, what do you use when creating infographics?</string>
+    <string name="question26">Voyager is between apprentice and maestro turns out?</string>
+    <string name="question27">Guys, tell me, KYC will be possible to pass the Russian
+        Federation?</string>
+    <string name="question28">Did I understand correctly that if I just want to keep uptime,
+        is it enough to have the prover turned on? If I want to mine,
+        do I need to turn off the prover and start the Aleo client?</string>
+    <string name="question29">Does the testnet still work?</string>
+    <string name="question30">Guys I have a question, I need help. On which Fireside or Community
+        Call can I present my project in English?)</string>
+    <string name="question31">I mine on three cards 3080, the hashrate in the miner writes 2000
+        from each one. But in the statistics on damominer.hk 3.03K P/s is displayed,
+        it should be 6K P/s, or not?</string>
+    <string name="question32">Hi all. On the website of the danomainer, they write connect to our
+        pool and you can dig without your own node. It begs the question. If you have your own node,
+        can you connect to it?</string>
+    <string name="question33">If you take a GTX 1060 3 gb ti for mining and put it on mining.
+        How many coins will she bring in a month? And in general, does it make sense to put this
+        video for mining? I just see that everyone puts on 3090.
+        So I asked myself this question.</string>
+    <string name="question34">Greetings. This question has probably been asked before,
+        but I will ask again. Can anyone explain why they give the role of ambassadors and generally
+        keep the RU branch if the Russian Federation is in the bath?</string>
+    <string name="question35">I try to catch the logic, 32 RAM or 40 which is better? I mean,
+        as I saw in the requirements, it’s always 8,16,32,64, so I think if you take 40 it will be
+        better or 32 or 64, that is, that the gap between them will not change
+        the weather or not?</string>
+    <string name="question36">Is using multiple servers with 24 threads, say 2 servers 24=48,
+        is it the same as using one server with 48 threads?</string>
+    <string name="question37">Guys, is there an option like in fish to limit the number
+        of threads used?</string>
+
+
+
+
+
 </resources>
