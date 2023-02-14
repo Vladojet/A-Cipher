@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Aleo</string>
+    <string name="need_network">Network access is required for the application to work</string>
+    <string name="try_again">Try again</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="explorer_menu_item">Explorer</string>
+    <string name="education_menu_item">Education</string>
+    <string name="faq_menu_item">FAQ</string>
+    <string name="lecture_number">Lecture number</string>
+    <string name="question">Question</string>
+    <string name="answer">Answer</string>
+    <string name="logoplaceholder">logoPlaceHolder</string>
+    <string name="from"><font color='#BBBBBD'>"   from   "</font></string>
+</resources>
