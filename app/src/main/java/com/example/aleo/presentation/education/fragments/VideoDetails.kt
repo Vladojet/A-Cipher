@@ -26,7 +26,6 @@ class VideoDetails : Fragment() {
     private var param1: String = "vemLEwjIxow"
     private lateinit var binding: VideoDetailsBinding
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -103,8 +102,6 @@ class VideoDetails : Fragment() {
             systemUiVisibility = View.SYSTEM_UI_FLAG_LAYOUT_STABLE
         }
     }
-
-
 }
 
 

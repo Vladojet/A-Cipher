@@ -45,10 +45,10 @@ class FaqFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         courseRV = binding.faqRecyclerView
         buildRecyclerView()
-        buildSerch()
+        buildSearch()
     }
 
-    private fun buildSerch() {
+    private fun buildSearch() {
         val searchView = binding.searchView
        searchView.setOnSearchClickListener {
            binding.logoPlaceHolder.visibility = View.INVISIBLE
@@ -73,16 +73,16 @@ class FaqFragment : Fragment() {
     })}
 
     private fun filter(text: String) {
-        val filteredlist = ArrayList<FaqEntity>()
+        val filteredList = ArrayList<FaqEntity>()
         for (item in faqEntityList) {
             if (item.questionText.lowercase().contains(text.lowercase(Locale.getDefault()))) {
-                filteredlist.add(item)
+                filteredList.add(item)
             }
         }
-        if (filteredlist.isEmpty()) {
+        if (filteredList.isEmpty()) {
             Toast.makeText(requireContext(), "No Data Found..", Toast.LENGTH_SHORT).show()
         } else {
-            adapter.filterList(filteredlist)
+            adapter.filterList(filteredList)
         }
     }
 

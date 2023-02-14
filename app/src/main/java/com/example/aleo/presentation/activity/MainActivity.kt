@@ -60,9 +60,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onBackPressed() {
-        val fragment = (this.supportFragmentManager.fragments.last() as? IOnBackPressed?)?.let {
-            it.onBackPressed()
-        } ?: super.onBackPressed()
+        (this.supportFragmentManager.fragments.last() as? IOnBackPressed?)?.onBackPressed()
+            ?: super.onBackPressed()
     }
 
 

@@ -98,7 +98,7 @@ class FaqRecyclerViewAdapter(
         var answerText: TextView
 
         init {
-            // initializing our views with their ids.
+
             questionText = binding.questionText
             answerText = binding.answerText
         }

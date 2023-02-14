@@ -94,7 +94,6 @@ class ExplorerFragment : Fragment(), IOnBackPressed {
         webSettings.allowContentAccess = true
         val cookieManager = CookieManager.getInstance()
         cookieManager.setAcceptCookie(true)
-
     }
 
     private fun showInternetLackMessage() {
