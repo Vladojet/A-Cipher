@@ -4,7 +4,6 @@ import android.content.Context
 import android.graphics.Color
 import android.text.Spannable
 import android.text.SpannableStringBuilder
-import android.text.method.LinkMovementMethod
 import android.text.style.ForegroundColorSpan
 import android.text.style.ImageSpan
 import android.text.util.Linkify
