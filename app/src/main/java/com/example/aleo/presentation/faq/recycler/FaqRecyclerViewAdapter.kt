@@ -68,7 +68,7 @@ class FaqRecyclerViewAdapter(
                 val holderDiscord = holder as ViewHolderDiscord
                 val string = model.questionText.plus(context.getString(R.string.from))
                 val ssb = SpannableStringBuilder(string)
-                val word = "   from   "
+                val word = "  from   "
                 val start = string.indexOf(word)
                 val end = start + word.length
                 ssb.setSpan(
@@ -89,7 +89,6 @@ class FaqRecyclerViewAdapter(
                 Linkify.addLinks(holderDiscord.answerText, Linkify.WEB_URLS)
             }
         }
-
     }
 
     override fun getItemCount() = faqModelList.size

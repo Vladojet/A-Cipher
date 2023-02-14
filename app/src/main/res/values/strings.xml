@@ -10,7 +10,7 @@
     <string name="question">Question</string>
     <string name="answer">Answer</string>
     <string name="logoplaceholder">logoPlaceHolder</string>
-    <string name="from">"   from   "</string>
+    <string name="from">"  from   "</string>
 
     <!-- Questions usual. -->
     <string name="question1">What is Aleo?</string>
@@ -124,10 +124,10 @@
         Similarly, an ambassador can only become a maestro if they are first a voyager.</string>
     <string name="answer19">You can read more about grant program
         here: https://www.aleo.org/post/community-grants-program.</string>
-    <string name="answer20">Guide: https://github.com/AleoHQ/snarkOS/
-Incentives for Aleo Testnet 3 activated on December 2nd at 00:00 UTC
-Testnet 3 Incentives Kickoff: https://www.aleo.org/post/testnet-3-incentives-kickoff
-Introducing Provers in Aleo Testnet 3: https://www.aleo.org/post/launching-testnet-3-2-provers
+    <string name="answer20">Guide: https://github.com/AleoHQ/snarkOS/ \n
+Incentives for Aleo Testnet 3 activated on December 2nd at 00:00 UTC \n
+Testnet 3 Incentives Kickoff: https://www.aleo.org/post/testnet-3-incentives-kickoff \n
+Introducing Provers in Aleo Testnet 3: https://www.aleo.org/post/launching-testnet-3-2-provers \n
         The official Explorer is in the final stages of development: https://www.aleo.network/
 </string>
     <string name="answer21">It is the place where you can learn more about Aleo project and expand

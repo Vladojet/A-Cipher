@@ -90,112 +90,112 @@ class FaqFragment : Fragment() {
         faqEntityList = ArrayList<FaqEntity>()
         (faqEntityList as ArrayList<FaqEntity>).add(FaqEntity(
                 getString(R.string.question1),
-                "DSA Self Paced Course",1))
+            getString(R.string.answer1),1))
         (faqEntityList as ArrayList<FaqEntity>).add(FaqEntity(
             getString(R.string.question2),
-            "JAVA Self Paced Course",1))
+            getString(R.string.answer2),1))
         (faqEntityList as ArrayList<FaqEntity>).add(FaqEntity(
             getString(R.string.question3),
-            "You can explore all the official links from the start-here channel. There is also a curated list of Aleo & Leo code and resources made by CTO Howard Wu: https://github.com/howardwu/awesome-aleo",1))
+            getString(R.string.answer3),1))
         (faqEntityList as ArrayList<FaqEntity>).add(FaqEntity(
             getString(R.string.question4),
-            "Python Self Paced Course",1))
+            getString(R.string.answer4),1))
         (faqEntityList as ArrayList<FaqEntity>).add(FaqEntity(
             getString(R.string.question5),
-                "Fork CPP Self Paced Course",1))
+                getString(R.string.answer5),1))
         (faqEntityList as ArrayList<FaqEntity>).add(FaqEntity(
             getString(R.string.question6),
-                "Fork CPP Self Paced Course",1))
+                getString(R.string.answer6),1))
         (faqEntityList as ArrayList<FaqEntity>).add(FaqEntity(
             getString(R.string.question7),
-                "Fork CPP Self Paced Course",1))
+                getString(R.string.answer7),1))
         (faqEntityList as ArrayList<FaqEntity>).add(FaqEntity(
             getString(R.string.question8),
-                "Fork CPP Self Paced Course",1))
+                getString(R.string.answer8),1))
         (faqEntityList as ArrayList<FaqEntity>).add(FaqEntity(
             getString(R.string.question9),
-                "Fork CPP Self Paced Course",1))
+                getString(R.string.answer9),1))
         (faqEntityList as ArrayList<FaqEntity>).add(FaqEntity(
             getString(R.string.question10),
-            "DSA Self Paced Course",1))
+            getString(R.string.answer10),1))
         (faqEntityList as ArrayList<FaqEntity>).add(FaqEntity(
             getString(R.string.question11),
-            "JAVA Self Paced Course",1))
+            getString(R.string.answer11),1))
         (faqEntityList as ArrayList<FaqEntity>).add(FaqEntity(
             getString(R.string.question12),
-            "C++ Self Paced Course",1))
+            getString(R.string.answer12),1))
         (faqEntityList as ArrayList<FaqEntity>).add(FaqEntity(
             getString(R.string.question13),
-            "Python Self Paced Course",1))
+            getString(R.string.answer13),1))
         (faqEntityList as ArrayList<FaqEntity>).add(FaqEntity(
             getString(R.string.question14),
-            "Fork CPP Self Paced Course",1))
+            getString(R.string.answer14),1))
         (faqEntityList as ArrayList<FaqEntity>).add(FaqEntity(
             getString(R.string.question15),
-            "Fork CPP Self Paced Course",1))
+            getString(R.string.answer15),1))
         (faqEntityList as ArrayList<FaqEntity>).add(FaqEntity(
             getString(R.string.question16),
-            "Fork CPP Self Paced Course",1))
+            getString(R.string.answer16),1))
         (faqEntityList as ArrayList<FaqEntity>).add(FaqEntity(
             getString(R.string.question17),
-            "Fork CPP Self Paced Course",1))
+            getString(R.string.answer17),1))
         (faqEntityList as ArrayList<FaqEntity>).add(FaqEntity(
             getString(R.string.question18),
-            "Fork CPP Self Paced Course",1))
+            getString(R.string.answer18),1))
         (faqEntityList as ArrayList<FaqEntity>).add(FaqEntity(
             getString(R.string.question19),
-            "DSA Self Paced Course",1))
+            getString(R.string.answer19),1))
         (faqEntityList as ArrayList<FaqEntity>).add(FaqEntity(
             getString(R.string.question20),
-            "JAVA Self Paced Course",1))
+            getString(R.string.answer20),1))
         (faqEntityList as ArrayList<FaqEntity>).add(FaqEntity(
             getString(R.string.question21),
-            "C++ Self Paced Course",1))
+            getString(R.string.answer21),1))
         (faqEntityList as ArrayList<FaqEntity>).add(FaqEntity(
             getString(R.string.question22),
-            "Python Self Paced Course",2))
+            getString(R.string.answer22),2))
         (faqEntityList as ArrayList<FaqEntity>).add(FaqEntity(
             getString(R.string.question23),
-            "Fork CPP Self Paced Course",2))
+            getString(R.string.answer23),2))
         (faqEntityList as ArrayList<FaqEntity>).add(FaqEntity(
             getString(R.string.question24),
-            "Fork CPP Self Paced Course",2))
+            getString(R.string.answer24),2))
         (faqEntityList as ArrayList<FaqEntity>).add(FaqEntity(
             getString(R.string.question25),
-            "Fork CPP Self Paced Course",2))
+            getString(R.string.answer25),2))
         (faqEntityList as ArrayList<FaqEntity>).add(FaqEntity(
             getString(R.string.question26),
-            "Fork CPP Self Paced Course",2))
+            getString(R.string.answer26),2))
         (faqEntityList as ArrayList<FaqEntity>).add(FaqEntity(
             getString(R.string.question27),
-            "Fork CPP Self Paced Course",2))
+            getString(R.string.answer27),2))
         (faqEntityList as ArrayList<FaqEntity>).add(FaqEntity(
             getString(R.string.question28),
-            "DSA Self Paced Course",2))
+            getString(R.string.answer28),2))
         (faqEntityList as ArrayList<FaqEntity>).add(FaqEntity(
             getString(R.string.question29),
-            "JAVA Self Paced Course",2))
+            getString(R.string.answer29),2))
         (faqEntityList as ArrayList<FaqEntity>).add(FaqEntity(
             getString(R.string.question30),
-            "C++ Self Paced Course",2))
+            getString(R.string.answer30),2))
         (faqEntityList as ArrayList<FaqEntity>).add(FaqEntity(
             getString(R.string.question31),
-            "Python Self Paced Course",2))
+            getString(R.string.answer31),2))
         (faqEntityList as ArrayList<FaqEntity>).add(FaqEntity(
             getString(R.string.question32),
-            "Fork CPP Self Paced Course",2))
+            getString(R.string.answer32),2))
         (faqEntityList as ArrayList<FaqEntity>).add(FaqEntity(
             getString(R.string.question33),
-            "Fork CPP Self Paced Course",2))
+            getString(R.string.answer33),2))
         (faqEntityList as ArrayList<FaqEntity>).add(FaqEntity(
             getString(R.string.question34),
-            "Fork CPP Self Paced Course",2))
+            getString(R.string.answer34),2))
         (faqEntityList as ArrayList<FaqEntity>).add(FaqEntity(
             getString(R.string.question35),
-            "Fork CPP Self Paced Course",2))
+            getString(R.string.answer35),2))
         (faqEntityList as ArrayList<FaqEntity>).add(FaqEntity(
             getString(R.string.question36),
-            "Fork CPP Self Paced Course",2))
+            getString(R.string.answer36),2))
         (faqEntityList as ArrayList<FaqEntity>).add(FaqEntity(
             getString(R.string.question37),
             getString(R.string.answer37),2))
