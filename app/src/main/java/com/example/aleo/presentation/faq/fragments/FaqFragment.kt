@@ -204,11 +204,8 @@ class FaqFragment : Fragment() {
 
         val manager = LinearLayoutManager(requireContext())
         courseRV.setHasFixedSize(true)
-
         courseRV.layoutManager = manager
-
         courseRV.adapter = adapter
     }
-
 }
 
