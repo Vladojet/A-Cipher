@@ -4,7 +4,6 @@ package com.example.aleo.presentation.education.recycleradapter
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.aleo.databinding.ItemVideoBinding
 import com.example.aleo.presentation.education.clickinterface.IPerformClick
@@ -14,7 +13,7 @@ import com.example.aleo.presentation.education.entity.EducationEntity
 class RecyclerViewVideoAdapter(
     private val linksList: List<EducationEntity>,
     private val clickHandler: IPerformClick
-    ) : RecyclerView.Adapter<RecyclerViewVideoAdapter.ViewHolder>() {
+) : RecyclerView.Adapter<RecyclerViewVideoAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val binding = ItemVideoBinding.inflate(LayoutInflater.from(parent.context), parent, false)
@@ -22,22 +21,25 @@ class RecyclerViewVideoAdapter(
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.tvVideoNumber.text = linksList[position].lectureName
+        holder.bind(linksList[position])
     }
 
     override fun getItemCount() = linksList.size
 
-    inner class ViewHolder(binding: ItemVideoBinding) : RecyclerView.ViewHolder(binding.root), View.OnClickListener {
-
-        val tvVideoNumber: TextView = binding.educationNumber
+    inner class ViewHolder(
+        private val binding: ItemVideoBinding
+    ) : RecyclerView.ViewHolder(binding.root), View.OnClickListener {
 
         init {
             binding.root.setOnClickListener(this)
         }
 
+        fun bind(entity: EducationEntity) {
+            binding.educationNumber.text = entity.lectureName
+        }
+
         override fun onClick(p0: View?) {
-            val currentVideo = linksList[bindingAdapterPosition].link
-            clickHandler.clickedVideoItem(currentVideo)
+            linksList[bindingAdapterPosition].link.let(clickHandler::onVideoItemClick)
         }
     }
 }

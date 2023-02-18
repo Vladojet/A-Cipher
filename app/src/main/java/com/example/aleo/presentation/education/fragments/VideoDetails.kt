@@ -19,17 +19,15 @@ import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.listeners.Abs
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
 
 
-private const val ARG_LINK = "link"
-
 class VideoDetails : Fragment() {
 
-    private var param1: String = "vemLEwjIxow"
+    private var videoId: String = "vemLEwjIxow"
     private lateinit var binding: VideoDetailsBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
-            param1 = it.getString(ARG_LINK)!!
+            videoId = it.getString(ARG_LINK, videoId)
         }
         requireActivity().requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
         requireActivity().findViewById<BottomNavigationView>(R.id.bottomNavigationBar).also {
@@ -52,10 +50,12 @@ class VideoDetails : Fragment() {
                     putString(ARG_LINK, param1)
                 }
             }
+        private const val ARG_LINK = "link"
     }
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
         binding = VideoDetailsBinding.inflate(layoutInflater)
@@ -76,7 +76,7 @@ class VideoDetails : Fragment() {
         youTubePlayerView.enterFullScreen()
         youTubePlayerView.addYouTubePlayerListener(object : AbstractYouTubePlayerListener() {
             override fun onReady(youTubePlayer: YouTubePlayer) {
-                val videoId = param1
+                val videoId = videoId
                 youTubePlayer.loadVideo(videoId, 0F)
             }
         })

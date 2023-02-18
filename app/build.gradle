@@ -51,8 +51,10 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
-    //ExomediaPlayer
-    implementation 'com.google.android.exoplayer:exoplayer:2.18.1'
+
     //VideoPlayer
     implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:11.1.0'
+
+    //LeakCanary
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.10'
 }

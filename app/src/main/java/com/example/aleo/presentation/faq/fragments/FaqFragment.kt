@@ -25,8 +25,8 @@ class FaqFragment : Fragment() {
     private lateinit var courseRV: RecyclerView
     private lateinit var binding: FragmentFaqBinding
 
-    private lateinit var  adapter: FaqRecyclerViewAdapter
-    private lateinit var faqEntityList: List<FaqEntity>
+    private lateinit var adapter: FaqRecyclerViewAdapter
+    private lateinit var faqEntityList: MutableList<FaqEntity>
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -50,11 +50,11 @@ class FaqFragment : Fragment() {
 
     private fun buildSearch() {
         val searchView = binding.searchView
-       searchView.setOnSearchClickListener {
-           binding.logoPlaceHolder.visibility = View.INVISIBLE
-           binding.searchView.setBackgroundResource(R.drawable.searchviewshape)
-           binding.searchView.layoutParams.width = MATCH_PARENT
-       }
+        searchView.setOnSearchClickListener {
+            binding.logoPlaceHolder.visibility = View.INVISIBLE
+            binding.searchView.setBackgroundResource(R.drawable.searchviewshape)
+            binding.searchView.layoutParams.width = MATCH_PARENT
+        }
         searchView.setOnCloseListener {
             binding.logoPlaceHolder.visibility = View.VISIBLE
             binding.searchView.setBackgroundResource(R.drawable.emptyset)
@@ -70,7 +70,8 @@ class FaqFragment : Fragment() {
                 filter(newText)
                 return false
             }
-    })}
+        })
+    }
 
     private fun filter(text: String) {
         val filteredList = ArrayList<FaqEntity>()

@@ -1,15 +1,25 @@
 package com.example.aleo.presentation.activity
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import android.os.Handler
+import android.os.Looper
 import android.view.Window
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import com.example.aleo.R
 
+@SuppressLint("CustomSplashScreen")
 class SplashScreen : AppCompatActivity() {
+
+    private val runnable: Runnable = Runnable {
+        val intent = Intent(this, MainActivity::class.java)
+        startActivity(intent)
+        finish()
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)
@@ -19,11 +29,7 @@ class SplashScreen : AppCompatActivity() {
 
     private fun injectSplash() {
         supportActionBar?.hide()
-        Handler().postDelayed({
-            val intent = Intent(this@SplashScreen, MainActivity::class.java)
-            startActivity(intent)
-            finish()
-        }, 2000)
+        Handler(Looper.getMainLooper()).postDelayed(runnable, 2000)
     }
 
     private fun injectTransparentStatusBar() {
@@ -34,5 +40,10 @@ class SplashScreen : AppCompatActivity() {
                 WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
             )
         }
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Handler(Looper.getMainLooper()).removeCallbacks(runnable)
     }
 }

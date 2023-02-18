@@ -63,8 +63,6 @@ class MainActivity : AppCompatActivity() {
         (this.supportFragmentManager.fragments.last() as? IOnBackPressed?)?.onBackPressed()
             ?: super.onBackPressed()
     }
-
-
 }
 
 

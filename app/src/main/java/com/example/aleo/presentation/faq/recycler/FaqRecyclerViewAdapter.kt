@@ -98,7 +98,6 @@ class FaqRecyclerViewAdapter(
         var answerText: TextView
 
         init {
-
             questionText = binding.questionText
             answerText = binding.answerText
         }
@@ -115,6 +114,5 @@ class FaqRecyclerViewAdapter(
             answerText = binding.answerText
         }
     }
-
 }
 
