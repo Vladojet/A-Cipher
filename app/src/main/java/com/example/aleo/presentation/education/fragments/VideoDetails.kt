@@ -58,8 +58,7 @@ class VideoDetails : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = VideoDetailsBinding.inflate(layoutInflater)
-        return binding.root
+        return VideoDetailsBinding.inflate(layoutInflater).apply { binding = this }.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -81,6 +80,7 @@ class VideoDetails : Fragment() {
             }
         })
     }
+
 
     override fun onDestroy() {
         super.onDestroy()

@@ -35,8 +35,7 @@ class ExplorerFragment : Fragment(), IOnBackPressed {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentExplorerBinding.inflate(layoutInflater)
-        return binding.root
+        return FragmentExplorerBinding.inflate(layoutInflater).apply { binding = this }.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

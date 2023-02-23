@@ -1,16 +1,19 @@
 package com.example.aleo.presentation.education.recycleradapter
 
 
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.aleo.databinding.ItemVideoBinding
 import com.example.aleo.presentation.education.clickinterface.IPerformClick
 import com.example.aleo.presentation.education.entity.EducationEntity
 
 
 class RecyclerViewVideoAdapter(
+    private val context: Context,
     private val linksList: List<EducationEntity>,
     private val clickHandler: IPerformClick
 ) : RecyclerView.Adapter<RecyclerViewVideoAdapter.ViewHolder>() {
@@ -36,6 +39,8 @@ class RecyclerViewVideoAdapter(
 
         fun bind(entity: EducationEntity) {
             binding.educationNumber.text = entity.lectureName
+            var thumbnail = "https://img.youtube.com/vi/"+ entity.link + "/0.jpg"
+            Glide.with(context).load(thumbnail).into(binding.imageEducation)
         }
 
         override fun onClick(p0: View?) {

@@ -24,11 +24,11 @@ class EducationFragment : Fragment(), IPerformClick {
 
     private lateinit var binding: FragmentEducationBinding
     private var linksList = listOf(
-        EducationEntity("Educational Video 1", "1cKA-tcJdkc"),
-        EducationEntity("Educational Video 2", "wsa3j74bQj4"),
-        EducationEntity("Educational Video 3", "uCJuprbXJk4"),
-        EducationEntity("Educational Video 4", "pPHbtzmYM6Y&t=3208s"),
-        EducationEntity("Educational Video 5", "ovGZYK9bq2o")
+        EducationEntity("WHAT REASONS MAKE THE ALEO PROJECT THE MOST PROMISING IN 2023?", "a-j9aJlwL_U"),
+        EducationEntity("WHAT DO YOU NEED TO DO TO BECOME AN ALEO AMBASSADOR?", "ImSNgzNs6dU"),
+        EducationEntity("ALEO PROJECT ROADMAP DETAILS", "KMZ3HEqj_jE"),
+        EducationEntity("FEBRUARY NEWS FROM ALEO", "KJDpFMCiatE"),
+        EducationEntity("HISTORY OF INVESTMENTS IN ALEO", "K9Kzugv3Cvc")
     )
 
     companion object {
@@ -48,10 +48,13 @@ class EducationFragment : Fragment(), IPerformClick {
         super.onViewCreated(view, savedInstanceState)
 
         binding.videoRecycler.apply {
-            adapter = RecyclerViewVideoAdapter(linksList, this@EducationFragment)
+            adapter = RecyclerViewVideoAdapter(requireContext(),linksList, this@EducationFragment)
             layoutManager = LinearLayoutManager(requireContext(), RecyclerView.VERTICAL, false)
         }
     }
+
+
+
 
     override fun onVideoItemClick(link: String) {
         if (requireContext().isOnline()) {
