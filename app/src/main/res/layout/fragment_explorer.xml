@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/main_colour"
     android:backgroundTint="@color/main_colour"
-    tools:context=".presentation.explorer.ExplorerFragment">
+    tools:context="network.aleo.aleo.presentation.explorer.ExplorerFragment">
 
     <WebView
         android:id="@+id/web_view"

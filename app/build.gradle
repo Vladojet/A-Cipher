@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.aleo'
+    namespace 'network.aleo.aleo'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.aleo"
+        applicationId "network.aleo.aleo"
         minSdk 24
         targetSdk 33
         versionCode 1
